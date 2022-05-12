@@ -1,38 +1,52 @@
 .App {
+  font-family: "Vazirmatn", sans-serif;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.label {
+  text-align: right;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.muirtl-6ir2fy-MuiButtonBase-root-MuiMenuItem-root {
+  direction: rtl;
+}
+
+@media screen {
+  .noPrint {
+  }
+  .noScreen {
+    display: none;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media print {
+  .noPrint {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+  .noScreen {
   }
 }
+
+.css-e4w4as-MuiFormLabel-root-MuiInputLabel-root,
+.css-o943dk-MuiFormLabel-root-MuiInputLabel-root,
+.css-12xj28v-MuiFormLabel-root-MuiInputLabel-root,
+.css-1gcj221-MuiFormLabel-root-MuiInputLabel-root {
+  left: auto !important;
+  right: 24px;
+  transform-origin: top right !important;
+}
+.css-hfutr2-MuiSvgIcon-root-MuiSelect-icon {
+  right: auto !important;
+  left: 7px;
+}
+.css-d9oaum-MuiSelect-select-MuiInputBase-input-MuiFilledInput-input.css-d9oaum-MuiSelect-select-MuiInputBase-input-MuiFilledInput-input.css-d9oaum-MuiSelect-select-MuiInputBase-input-MuiFilledInput-input {
+  text-align: right;
+}
+
+.css-6ir2fy-MuiButtonBase-root-MuiMenuItem-root {
+  flex-direction: row-reverse !important;
+}
+/* .css-o943dk-MuiFormLabel-root-MuiInputLabel-root {
+  left: auto !important;
+  transform-origin: top right !important;
+  right: 0;
+} */
